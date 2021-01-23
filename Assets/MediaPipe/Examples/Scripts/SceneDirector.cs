@@ -15,7 +15,6 @@ public class SceneDirector : MonoBehaviour {
 
   readonly object graphLock = new object();
   WebCamDevice? webCamDevice;
-  GameObject webCamScreen;
   Coroutine cameraSetupCoroutine;
   GameObject graphPrefab;
   GameObject graphContainer;
@@ -49,8 +48,6 @@ public class SceneDirector : MonoBehaviour {
 #endif
 
   async void Start() {
-    webCamScreen = GameObject.Find("WebCamScreen");
-
 #if UNITY_ANDROID
     if (useGPU) {
       PluginCallback callback = GetCurrentContext;
@@ -96,6 +93,7 @@ public class SceneDirector : MonoBehaviour {
 
   void ResetCamera(WebCamDevice? webCamDevice) {
     StopCamera();
+    var webCamScreen = GameObject.Find("WebCamScreen");
     cameraSetupCoroutine = StartCoroutine(webCamScreen.GetComponent<WebCamScreenController>().ResetScreen(webCamDevice));
     this.webCamDevice = webCamDevice;
   }
@@ -153,6 +151,7 @@ public class SceneDirector : MonoBehaviour {
       yield break;
     }
 
+    var webCamScreen = GameObject.Find("WebCamScreen");
     var webCamScreenController = webCamScreen.GetComponent<WebCamScreenController>();
     yield return WaitForCamera(webCamScreenController);
 

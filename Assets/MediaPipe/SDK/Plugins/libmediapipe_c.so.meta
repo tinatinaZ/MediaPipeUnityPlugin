@@ -12,13 +12,15 @@ PluginImporter:
   validateReferences: 1
   platformData:
   - first:
-      : Any
+      '': Any
     second:
       enabled: 0
       settings:
         Exclude Android: 1
         Exclude Editor: 0
+        Exclude Linux: 0
         Exclude Linux64: 0
+        Exclude LinuxUniversal: 0
         Exclude OSXUniversal: 0
         Exclude WebGL: 1
         Exclude Win: 0
@@ -33,7 +35,7 @@ PluginImporter:
   - first:
       Any: 
     second:
-      enabled: 0
+      enabled: 1
       settings: {}
   - first:
       Editor: Editor
@@ -44,41 +46,58 @@ PluginImporter:
         DefaultValueInitialized: true
         OS: AnyOS
   - first:
-      Standalone: Linux64
+      Facebook: Win
     second:
-      enabled: 1
+      enabled: 0
       settings:
         CPU: AnyCPU
   - first:
-      Standalone: OSXUniversal
+      Facebook: Win64
     second:
-      enabled: 1
+      enabled: 0
       settings:
-        CPU: x86_64
+        CPU: AnyCPU
   - first:
-      Standalone: Win
+      Standalone: Linux
     second:
       enabled: 1
       settings:
         CPU: x86
   - first:
-      Standalone: Win64
+      Standalone: Linux64
     second:
       enabled: 1
       settings:
         CPU: x86_64
   - first:
-      WebGL: WebGL
+      Standalone: LinuxUniversal
     second:
-      enabled: 0
+      enabled: 1
       settings: {}
+  - first:
+      Standalone: OSXUniversal
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: Win
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: Win64
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
   - first:
       iPhone: iOS
     second:
       enabled: 0
       settings:
         AddToEmbeddedBinaries: false
-        CPU: AnyCPU
         CompileFlags: 
         FrameworkDependencies: 
   userData: 

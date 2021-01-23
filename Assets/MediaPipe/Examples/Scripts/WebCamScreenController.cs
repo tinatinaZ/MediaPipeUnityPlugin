@@ -70,7 +70,7 @@ public class WebCamScreenController : MonoBehaviour {
 
     try {
       webCamTexture.Play();
-      Debug.Log($"WebCamTexture Graphics Format: {webCamTexture.graphicsFormat}");
+      // Debug.Log($"WebCamTexture Graphics Format: {webCamTexture.graphicsFormat}");
     } catch (Exception e) {
       Debug.LogWarning(e.ToString());
       yield break;
