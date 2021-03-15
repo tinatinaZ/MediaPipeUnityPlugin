@@ -4,8 +4,10 @@
   "displayName": "MediaPipe Plugin",
   "description": "MediaPipe Plugin for Unity",
   "unity": "2019.4",
-  "dependencies": {},
-  "keywords": ["mediapipe", "MediaPipe"],
+  "keywords": [
+    "mediapipe",
+    "MediaPipe"
+  ],
   "author": {
     "name": "homuler"
   }
