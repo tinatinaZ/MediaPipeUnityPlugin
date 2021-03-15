@@ -55,8 +55,9 @@ public class HandTrackingGraph : DemoGraph {
 
   public override void RenderOutput(WebCamScreenController screenController, TextureFrame textureFrame) {
     var handTrackingValue = FetchNextHandTrackingValue();
-    RenderAnnotation(screenController, handTrackingValue);
-
+    //RenderAnnotation(screenController, handTrackingValue);
+    RenderAnnotation3D(screenController, handTrackingValue);
+    
     screenController.DrawScreen(textureFrame);
   }
 
@@ -99,6 +100,12 @@ public class HandTrackingGraph : DemoGraph {
   private void RenderAnnotation(WebCamScreenController screenController, HandTrackingValue value) {
     // NOTE: input image is flipped
     GetComponent<HandTrackingAnnotationController>().Draw(
+      screenController.transform, value.HandLandmarkLists, value.Handednesses, value.PalmDetections, value.PalmRects, true);
+  }
+  
+  private void RenderAnnotation3D(WebCamScreenController screenController, HandTrackingValue value) {
+    // NOTE: input image is flipped
+    GetComponent<HandTrackingAnnotationController>().Draw3D(
       screenController.transform, value.HandLandmarkLists, value.Handednesses, value.PalmDetections, value.PalmRects, true);
   }
 

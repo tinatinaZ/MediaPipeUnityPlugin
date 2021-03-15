@@ -27,11 +27,25 @@ namespace Mediapipe {
 
       return Vector3.Scale(new Vector3(relX, relY, 0), ScaleVector(screenTransform)) + screenTransform.position;
     }
+    
+    protected Vector3 Get3DPositionFromNormalizedPoint(Transform screenTransform, float x, float y, float z, bool isFlipped) {
+      var relX = (isFlipped ? -1 : 1) * (x - 0.5f);
+      var relY = 0.5f - y;
+      var relZ = z;
+
+      return Vector3.Scale(new Vector3(relX, relY, z), ScaleVector(screenTransform)) + screenTransform.position;
+    }
 
     protected Vector3 GetPosition(Transform screenTransform, NormalizedLandmark point, bool isFlipped) {
       return GetPositionFromNormalizedPoint(screenTransform, point.X, point.Y, isFlipped);
     }
-
+    
+    protected Vector3 Get3DPosition(Transform screenTransform, NormalizedLandmark point, bool isFlipped)
+    {
+      int zScale = 20;
+      return Get3DPositionFromNormalizedPoint(screenTransform, point.X, point.Y, point.Z * zScale, isFlipped);
+    }
+    
     protected Vector3 GetPosition(Transform screenTransform, mplt.RelativeKeypoint point, bool isFlipped) {
       return GetPositionFromNormalizedPoint(screenTransform, point.X, point.Y, isFlipped);
     }

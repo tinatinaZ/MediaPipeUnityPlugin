@@ -20,6 +20,11 @@ namespace Mediapipe {
       gameObject.transform.position = GetPosition(screenTransform, point, isFlipped);
       gameObject.transform.localScale = scale * Vector3.one;
     }
+    
+    public void Draw3D(Transform screenTransform, NormalizedLandmark point, bool isFlipped = false, float scale = 0.5f) {
+      gameObject.transform.position = Get3DPosition(screenTransform, point, isFlipped);
+      gameObject.transform.localScale = scale * Vector3.one;
+    }
 
     /// <summary>
     ///   Renders a sphere on a screen.

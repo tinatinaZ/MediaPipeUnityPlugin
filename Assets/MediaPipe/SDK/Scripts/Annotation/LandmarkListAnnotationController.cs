@@ -64,8 +64,32 @@ namespace Mediapipe {
       for (var i = 0; i < NodeSize; i++) {
         var landmark = landmarkList.Landmark[i];
         var node = Nodes[i];
-
+        
         node.GetComponent<NodeAnnotationController>().Draw(screenTransform, landmark, isFlipped, NodeScale);
+      }
+
+      for (var i = 0; i < EdgeSize; i++) {
+        var connection = Connections[i];
+        var edge = Edges[i];
+
+        var a = Nodes[connection.Item1];
+        var b = Nodes[connection.Item2];
+
+        edge.GetComponent<EdgeAnnotationController>().Draw(screenTransform, a, b);
+      }
+    }
+    
+    public void Draw3D(Transform screenTransform, NormalizedLandmarkList landmarkList, bool isFlipped = false) {
+      if (isEmpty(landmarkList)) {
+        Clear();
+        return;
+      }
+
+      for (var i = 0; i < NodeSize; i++) {
+        var landmark = landmarkList.Landmark[i];
+        var node = Nodes[i];
+        
+        node.GetComponent<NodeAnnotationController>().Draw3D(screenTransform, landmark, isFlipped, NodeScale);
       }
 
       for (var i = 0; i < EdgeSize; i++) {

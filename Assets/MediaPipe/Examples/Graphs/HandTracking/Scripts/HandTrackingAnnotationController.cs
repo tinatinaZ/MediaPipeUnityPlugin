@@ -36,4 +36,12 @@ public class HandTrackingAnnotationController : AnnotationController {
     palmDetectionsAnnotation.GetComponent<DetectionListAnnotationController>().Draw(screenTransform, palmDetections, isFlipped);
     palmRectsAnnotation.GetComponent<RectListAnnotationController>().Draw(screenTransform, handRects, isFlipped);
   }
+  
+  public void Draw3D(Transform screenTransform, List<NormalizedLandmarkList> handLandmarkLists, List<ClassificationList> handednesses,
+    List<Detection> palmDetections, List<NormalizedRect> handRects, bool isFlipped = false)
+  {
+    handLandmarkListsAnnotation.GetComponent<MultiHandLandmarkListAnnotationController>().Draw3D(screenTransform, handLandmarkLists, isFlipped);
+    //palmDetectionsAnnotation.GetComponent<DetectionListAnnotationController>().Draw(screenTransform, palmDetections, isFlipped);
+    //palmRectsAnnotation.GetComponent<RectListAnnotationController>().Draw(screenTransform, handRects, isFlipped);
+  }
 }
