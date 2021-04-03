@@ -1,6 +1,11 @@
 # MediaPipe Unity Plugin
 This is a Unity (2019.4.18f1) Plugin to use MediaPipe.
 
+## Note
+This is a modification based on @homuler's MediaPipeUnityPlugin, several changes are add to this demo:
+- Enable using hand detection data to control 3d character's hands by animation rigging package
+- Trying to show the 2d annotations on raw image (not finished yet)
+
 ## Platforms
 - [x] Linux Desktop (tested on ArchLinux)
 - [x] Android
