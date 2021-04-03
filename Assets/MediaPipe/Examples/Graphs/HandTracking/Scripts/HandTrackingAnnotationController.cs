@@ -15,6 +15,14 @@ public class HandTrackingAnnotationController : AnnotationController {
     handLandmarkListsAnnotation = Instantiate(handLandmarkListsPrefab);
     palmRectsAnnotation = Instantiate(palmRectsPrefab);
     palmDetectionsAnnotation = Instantiate(palmDetectionsPrefab);
+    
+    GameObject parent = GameObject.Find("2DAnnotations");
+    if (parent)
+    {
+      handLandmarkListsAnnotation.transform.parent = parent.transform;
+      palmRectsAnnotation.transform.parent = parent.transform;
+      palmDetectionsAnnotation.transform.parent = parent.transform;
+    }
   }
 
   void OnDestroy() {
@@ -41,7 +49,12 @@ public class HandTrackingAnnotationController : AnnotationController {
     List<Detection> palmDetections, List<NormalizedRect> handRects, bool isFlipped = false)
   {
     handLandmarkListsAnnotation.GetComponent<MultiHandLandmarkListAnnotationController>().Draw3D(screenTransform, handLandmarkLists, isFlipped);
-    //palmDetectionsAnnotation.GetComponent<DetectionListAnnotationController>().Draw(screenTransform, palmDetections, isFlipped);
-    //palmRectsAnnotation.GetComponent<RectListAnnotationController>().Draw(screenTransform, handRects, isFlipped);
+    palmDetectionsAnnotation.GetComponent<DetectionListAnnotationController>().Draw(screenTransform, palmDetections, isFlipped);
+    palmRectsAnnotation.GetComponent<RectListAnnotationController>().Draw(screenTransform, handRects, isFlipped);
+  }
+  
+  public void Draw3D(Transform screenTransform, List<NormalizedLandmarkList> handLandmarkLists, bool isFlipped = false)
+  {
+    handLandmarkListsAnnotation.GetComponent<MultiHandLandmarkListAnnotationController>().Draw3D(screenTransform, handLandmarkLists, isFlipped);
   }
 }

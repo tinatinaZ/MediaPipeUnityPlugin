@@ -37,6 +37,11 @@ namespace Mediapipe {
       var positions = new Vector3[] { src, dst };
 
       gameObject.GetComponent<LineRenderer>().SetPositions(positions);
+      GameObject parent = GameObject.Find("2DAnnotations");
+      if (parent)
+      {
+        gameObject.transform.parent = parent.transform;
+      }
     }
   }
 }

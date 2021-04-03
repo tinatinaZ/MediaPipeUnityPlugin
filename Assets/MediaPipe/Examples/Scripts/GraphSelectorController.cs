@@ -17,6 +17,7 @@ public class GraphSelectorController : MonoBehaviour {
   [SerializeField] GameObject boxTrackingGraph = null;
   [SerializeField] GameObject instantMotionTrackingGraph = null;
   [SerializeField] GameObject officialDemoGraph = null;
+  [SerializeField] GameObject handDetector = null;
 
   private GameObject sceneDirector;
   private Dictionary<string, GameObject> graphs;
@@ -36,6 +37,8 @@ public class GraphSelectorController : MonoBehaviour {
     //AddGraph("Face Detection", faceDetectionGraph);
     //AddGraph("Face Mesh", faceMeshGraph);
     //AddGraph("Iris Tracking", irisTrackingGraph);
+    
+    AddGraph("Hand Detector", handDetector);
     AddGraph("Hand Tracking", handTrackingGraph);
     //AddGraph("Pose Tracking", poseTrackingGraph);
     //AddGraph("Holistic", holisticGraph);
@@ -46,7 +49,7 @@ public class GraphSelectorController : MonoBehaviour {
     //AddGraph("Object Detection 3d", objectDetection3dGraph);
     //AddGraph("Box Tracking", boxTrackingGraph);
     //AddGraph("Instant Motion Tracking", instantMotionTrackingGraph);
-    //AddGraph("Official Demo", officialDemoGraph);
+    AddGraph("Official Demo", officialDemoGraph);
 
     var graphSelector = GetComponent<Dropdown>();
     graphSelector.ClearOptions();

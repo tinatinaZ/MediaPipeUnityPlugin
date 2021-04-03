@@ -1,7 +1,12 @@
+using System;
 using Mediapipe;
 using System.Collections.Generic;
+using UnityEngine;
+using HandLandmarkInterface;
 
-public class HandTrackingGraph : DemoGraph {
+namespace Mediapipe
+{
+  public class HandTrackingGraph : DemoGraph {
   private const string handLandmarksStream = "hand_landmarks";
   private OutputStreamPoller<List<NormalizedLandmarkList>> handLandmarksStreamPoller;
   private NormalizedLandmarkListVectorPacket handLandmarksPacket;
@@ -26,6 +31,7 @@ public class HandTrackingGraph : DemoGraph {
   private OutputStreamPoller<bool> palmDetectionsPresenceStreamPoller;
   private BoolPacket palmDetectionsPresencePacket;
 
+  public HandLandmarkResultSet landmarkResultSet = null;
   private SidePacket sidePacket;
 
   public override Status StartRun() {
@@ -55,9 +61,8 @@ public class HandTrackingGraph : DemoGraph {
 
   public override void RenderOutput(WebCamScreenController screenController, TextureFrame textureFrame) {
     var handTrackingValue = FetchNextHandTrackingValue();
-    //RenderAnnotation(screenController, handTrackingValue);
-    RenderAnnotation3D(screenController, handTrackingValue);
-    
+    RenderAnnotation(screenController, handTrackingValue);
+
     screenController.DrawScreen(textureFrame);
   }
 
@@ -69,7 +74,7 @@ public class HandTrackingGraph : DemoGraph {
     var handednesses = isHandLandmarksPresent ? FetchNextHandednesses() : new List<ClassificationList>();
     var palmDetections = isPalmDetectionsPresent ? FetchNextPalmDetections() : new List<Detection>();
     var palmRects = isPalmDetectionsPresent ? FetchNextPalmRects() : new List<NormalizedRect>();
-
+    
     return new HandTrackingValue(handLandmarks, handednesses, palmDetections, palmRects);
   }
 
@@ -102,12 +107,6 @@ public class HandTrackingGraph : DemoGraph {
     GetComponent<HandTrackingAnnotationController>().Draw(
       screenController.transform, value.HandLandmarkLists, value.Handednesses, value.PalmDetections, value.PalmRects, true);
   }
-  
-  private void RenderAnnotation3D(WebCamScreenController screenController, HandTrackingValue value) {
-    // NOTE: input image is flipped
-    GetComponent<HandTrackingAnnotationController>().Draw3D(
-      screenController.transform, value.HandLandmarkLists, value.Handednesses, value.PalmDetections, value.PalmRects, true);
-  }
 
   protected override void PrepareDependentAssets() {
     PrepareDependentAsset("hand_landmark.bytes");
@@ -116,3 +115,5 @@ public class HandTrackingGraph : DemoGraph {
     PrepareDependentAsset("palm_detection.bytes");
   }
 }
+}
+

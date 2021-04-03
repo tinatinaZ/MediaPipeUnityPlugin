@@ -61,6 +61,11 @@ namespace Mediapipe {
         gameObject.GetComponent<TextMesh>().text = $" {detection.Label[0]}, {detection.Score[0]:G3}";
         gameObject.transform.position = positions[0];
       }
+      GameObject parent = GameObject.Find("2DAnnotations");
+      if (parent)
+      {
+        gameObject.transform.parent = parent.transform;
+      }
     }
 
     private void DrawRelativeKeypoints(Transform screenTransform, pbc.RepeatedField<mplt.RelativeKeypoint> keypoints, bool isFlipped = false) {

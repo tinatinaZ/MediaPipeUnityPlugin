@@ -2,34 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a73c5d4-f744-4029-a3e0-7aa2380f0b9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MediaPipeUnityPlugin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediaPipeUnityPlugin/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MediaPipeUnityPlugin/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediaPipeUnityPlugin/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MediaPipeUnityPlugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediaPipeUnityPlugin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Objects/HandTracking.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Objects/HandTracking.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/HandTrackingAnnotationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/HandTrackingAnnotationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/HandTrackingGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/HandTrackingGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/MultiHandLandmarkListAnnotationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/MultiHandLandmarkListAnnotationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scenes/DesktopDemo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scenes/DesktopDemo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Plugins/Android/mediapipe_android.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Plugins/iOS/MediaPipeUnity.framework.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Plugins/iOS/MediaPipeUnity.framework.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Plugins/libmediapipe_c.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Plugins/libmediapipe_c.dylib.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Plugins/libmediapipe_c.dylib.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Plugins/libmediapipe_c.so.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/AnnotationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/AnnotationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/LandmarkListAnnotationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/LandmarkListAnnotationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/GraphSelectorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/GraphSelectorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/SceneDirector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/SceneDirector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/WebCamScreenController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/WebCamScreenController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/DetectionAnnotationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/DetectionAnnotationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/EdgeAnnotationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/EdgeAnnotationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/NodeAnnotationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/NodeAnnotationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Calculator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Calculator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/CalculatorOptions.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/CalculatorOptions.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Classification.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Classification.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Detection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Detection.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Landmark.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Landmark.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/LocationData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/LocationData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/MediapipeOptions.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/MediapipeOptions.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/ModelMatrix.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/ModelMatrix.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/PacketFactory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/PacketFactory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/PacketGenerator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/PacketGenerator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Rasterization.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Rasterization.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Rect.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Rect.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/StatusHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/StatusHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/StickerBuffer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/StickerBuffer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/StreamHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/StreamHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/RectAnnotationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/RectAnnotationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SceneDirector.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneDirector.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WebCamScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WebCamScreen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HandDetector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HandDetector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +34,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HandDetector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Classification.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Detection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/GraphSelectorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Calculator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ClassroomScene/Character/HandLandmarkDetector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Rect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Protobuf/Landmark.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/WebCamScreenController.cs" />
-      <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/GraphSelectorController.cs" />
       <option value="$PROJECT_DIR$/Assets/MediaPipe/MyContent/HandTracking/Scripts/3DHandTrackingGraph.cs" />
       <option value="$PROJECT_DIR$/Assets/MediaPipe/MyContent/HandTracking/Scripts/3DHandTrackingValue.cs" />
       <option value="$PROJECT_DIR$/Assets/MediaPipe/MyContent/HandTracking/Scripts/3DMultiHandLandmarkListAnnotationController.cs" />
@@ -62,12 +68,42 @@
       <option value="$PROJECT_DIR$/Assets/MediaPipe/MyContent/HandTracking/Scripts/MultiHandLandmarkListAnnotationController3D.cs" />
       <option value="$PROJECT_DIR$/Assets/MediaPipe/MyContent/HandTracking/Scripts/HandTrackingGraph3D.cs" />
       <option value="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/AnnotationController.cs" />
-      <option value="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/NodeAnnotationController.cs" />
-      <option value="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/LandmarkListAnnotationController.cs" />
       <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/MultiHandLandmarkListAnnotationController.cs" />
-      <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/HandTrackingGraph.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SingleHandAnnotationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SingleHandLandmarkListAnnotationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Resources/left_right_hand_tracking_android.txt" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Resources/left_right_hand_tracking_desktop_gpu.txt" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Resources/left_right_hand_tracking_desktop_cpu.txt" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/GraphSelectorController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LandmarkInterface/LandmarkResultSet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LandmarkInterface/HandLandmark.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LandmarkInterface/LandmarkOrientation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LandmarkInterface/TransformLink.cs" />
       <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/HandTrackingAnnotationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/EdgeAnnotationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/DetectionAnnotationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/RectAnnotationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RigTransformController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AnimationRigController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandLandmarkInterface/DepthCalibrator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandLandmarkInterface/LandmarkOrientation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandLandmarkInterface/LandmarkResultSet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandLandmarkInterface/LandmarkType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandLandmarkInterface/NormalizedLandmarkListExtension.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandLandmarkInterface/TransformLink.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandLandmarkInterface/HandDepthCalibrator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandLandmarkInterface/HandLandmarkResultSet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandLandmarkInterface/HandLandmarkOrientation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandLandmarkInterface/HandLandmark.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HandDetector.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/IKControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ClassroomScene/Character/HandDetector.cs" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/HandTrackingGraph.cs" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/LandmarkListAnnotationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/SceneDirector.cs" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/Examples/Scripts/WebCamScreenController.cs" />
+      <option value="$PROJECT_DIR$/Assets/MediaPipe/SDK/Scripts/Annotation/NodeAnnotationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ClassroomScene/Character/HandLandmarkDetector.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pVpghr0pKNei8AgzRnTCBsjaeq" />
@@ -127,7 +163,12 @@
       <workItem from="1615438066865" duration="289000" />
       <workItem from="1615440611096" duration="1735000" />
       <workItem from="1615779123311" duration="7470000" />
-      <workItem from="1615801249514" duration="1172000" />
+      <workItem from="1615801249514" duration="1386000" />
+      <workItem from="1615872401511" duration="11959000" />
+      <workItem from="1616054257019" duration="5399000" />
+      <workItem from="1616472475066" duration="7385000" />
+      <workItem from="1617277161691" duration="3707000" />
+      <workItem from="1617421096372" duration="2791000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,7 @@ using Mediapipe;
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WebCamScreenController : MonoBehaviour {
   [SerializeField] int Width = 640;
@@ -69,8 +70,10 @@ public class WebCamScreenController : MonoBehaviour {
     }
 
     Renderer renderer = GetComponent<Renderer>();
+    RawImage rawImage = GetComponent<RawImage>();
     outputTexture = new Texture2D(webCamTexture.width, webCamTexture.height, TextureFormat.RGBA32, false);
-    renderer.material.mainTexture = outputTexture;
+    //renderer.material.mainTexture = outputTexture;
+    rawImage.texture = outputTexture;
 
     pixelData = new Color32[webCamTexture.width * webCamTexture.height];
   }

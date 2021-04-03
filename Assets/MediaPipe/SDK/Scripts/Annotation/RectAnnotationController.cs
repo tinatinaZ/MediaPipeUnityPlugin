@@ -22,6 +22,11 @@ namespace Mediapipe {
       var positions = GetPositions(screenTransform, rect, isFlipped);
 
       gameObject.GetComponent<LineRenderer>().SetPositions(positions);
+      GameObject parent = GameObject.Find("2DAnnotations");
+      if (parent)
+      {
+        gameObject.transform.parent = parent.transform;
+      }
     }
   }
 }

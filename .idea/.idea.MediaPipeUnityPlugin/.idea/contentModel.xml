@@ -59,6 +59,9 @@
                   <e p="hand_tracking_android.txt" t="Include" />
                   <e p="hand_tracking_desktop_cpu.txt" t="Include" />
                   <e p="hand_tracking_desktop_gpu.txt" t="Include" />
+                  <e p="left_right_hand_tracking_android.txt" t="Include" />
+                  <e p="left_right_hand_tracking_desktop_cpu.txt" t="Include" />
+                  <e p="left_right_hand_tracking_desktop_gpu.txt" t="Include" />
                 </e>
                 <e p="Scripts" t="Include">
                   <e p="HandTrackingAnnotationController.cs" t="Include" />
@@ -396,7 +399,23 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="HandDetector.cs" t="Include" />
+          <e p="ClassroomScene" t="Include">
+            <e p="Character" t="Include">
+              <e p="AnimationRigController.cs" t="Include" />
+              <e p="CharacterAnimController.cs" t="Include" />
+              <e p="HandLandmarkDetector.cs" t="Include" />
+              <e p="HandLandmarkInterface" t="Include">
+                <e p="HandDepthCalibrator.cs" t="Include" />
+                <e p="HandLandmark.cs" t="Include" />
+                <e p="HandLandmarkOrientation.cs" t="Include" />
+                <e p="HandLandmarkResultSet.cs" t="Include" />
+                <e p="HandLandmarkType.cs" t="Include" />
+                <e p="HandTransformLink.cs" t="Include" />
+                <e p="NormalizedHandLandmarkListExtension.cs" t="Include" />
+              </e>
+              <e p="RigTransformController.cs" t="Include" />
+            </e>
+          </e>
         </e>
       </e>
       <e p="MediaPipeSDK.csproj" t="IncludeRecursive" />
